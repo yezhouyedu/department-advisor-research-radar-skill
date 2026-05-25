@@ -72,6 +72,68 @@ dist/
 - 理解一个院系内部的研究主题分布
 - 用近年公开证据修正官网过旧的教师画像
 
+## 使用说明
+
+### 给人使用
+
+如果你是手动使用这个 skill，建议按下面的方式准备输入：
+
+1. 先明确目标范围。
+   例如：学校、院系/专业、是否要全量教师、输出语言。
+
+2. 准备一个官方教师名单入口。
+   最好是院系官网的 faculty page、教师目录页、导师名单页。
+
+3. 明确调研目标。
+   例如：
+   - 申请前筛选导师
+   - 了解某个专业整体研究版图
+   - 核对老师近几年真实研究方向
+
+4. 明确你希望 agent 优先看的证据。
+   例如：
+   - 近 3-5 年论文
+   - Google Scholar / ORCID
+   - 学院新闻、项目、讲座
+   - 不要只看官网简介
+
+5. 要求输出成 Markdown 报告。
+   这样最适合后续继续精筛、批注或二次整理。
+
+你可以直接参考这个输入模板：
+- [department_advisor_research_radar_input_template.md](C:/Users/ASUS/Documents/Codex/2026-05-25/https-chatgpt-com-share-e-6a14381a/department-advisor-research-radar/assets/department_advisor_research_radar_input_template.md)
+
+一个典型提问方式是：
+
+```text
+帮我调研复旦大学社会发展与公共政策学院心理学系全部老师最近的研究方向。
+不要只看官网，优先看近 3-5 年论文、Google Scholar、ORCID、学院新闻和公开讲座。
+最后整理成中文 Markdown 报告。
+```
+
+### 给 Agent 使用
+
+如果你是把这个 skill 装给另一个 agent，用法可以非常简单：
+
+1. 把 skill 安装到对应 agent 的 skills 目录。
+2. 在用户请求涉及“院系全量导师调研”“最新研究方向”“不要只看官网”“整理为 Markdown 报告”时触发它。
+3. 按 `SKILL.md` 的工作流执行：
+   - 先锁定范围
+   - 再拿官方 roster
+   - 再逐个老师做多源证据调研
+   - 最后生成结构化 Markdown
+4. 弱证据场景下保持保守，不要过度推断。
+
+对 agent 来说，最重要的触发关键词通常是：
+- 某学校/某院系/某专业所有老师
+- 最新研究方向
+- 不要只看官网
+- 近 3-5 年论文
+- 导师筛选 / 套磁 / 申请前调研
+- Markdown 报告
+
+如果用户只想了解单个老师，这个 skill 也可以用，但它最擅长的是“一个院系/专业的全量调研”。
+
 ## 重新校验与打包
 
 如果你本地也有 skill-creator 工具链，可以这样重新校验和打包：

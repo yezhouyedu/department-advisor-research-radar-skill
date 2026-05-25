@@ -72,6 +72,69 @@ dist/
 - Understand topic clusters within a program
 - Update stale official faculty profiles with recent public evidence
 
+## Usage Guide
+
+### For Humans
+
+If you want to use this skill manually, prepare the request like this:
+
+1. Define the scope clearly.
+   For example: school, department/program, whether you want all faculty members, and output language.
+
+2. Provide an official faculty-list entry point.
+   The best input is usually a department faculty page, teacher directory, or advisor roster page.
+
+3. State the research goal.
+   For example:
+   - advisor screening before applications
+   - understanding the research landscape of a program
+   - verifying what faculty members are actually working on in recent years
+
+4. Specify preferred evidence sources.
+   For example:
+   - papers from the last 3-5 years
+   - Google Scholar / ORCID
+   - school news, grants, talks, and projects
+   - do not rely on official bios alone
+
+5. Ask for a Markdown report.
+   That format is easiest to review, annotate, and refine later.
+
+You can start from this template:
+- [department_advisor_research_radar_input_template.md](C:/Users/ASUS/Documents/Codex/2026-05-25/https-chatgpt-com-share-e-6a14381a/department-advisor-research-radar/assets/department_advisor_research_radar_input_template.md)
+
+A typical request looks like:
+
+```text
+Help me investigate the latest research directions of all faculty members in the Department of Psychology,
+School of Social Development and Public Policy, Fudan University.
+Do not rely only on the official website. Prioritize papers from the last 3-5 years, Google Scholar, ORCID,
+school news, and public talks. Produce the final result as a Markdown report.
+```
+
+### For Agents
+
+If you are installing this skill for another agent, the usage pattern is simple:
+
+1. Install the skill into the target agent's skills directory.
+2. Trigger it when the request involves full-department faculty research mapping, current research directions, multi-source verification, or Markdown reporting.
+3. Follow the workflow in `SKILL.md`:
+   - lock the scope
+   - build the official roster
+   - investigate each faculty member with multi-source evidence
+   - generate a structured Markdown report
+4. Stay conservative when evidence is sparse or ambiguous.
+
+For agent triggering, the most useful signals are:
+- all teachers/advisors in a school, department, or program
+- latest research directions
+- do not rely only on the official website
+- papers from the last 3-5 years
+- advisor screening / outreach / application research
+- Markdown report
+
+This skill can still be used for a single faculty member, but it is strongest when used for a full department or program-wide investigation.
+
 ## Revalidate And Repackage
 
 If you have the local skill-creator toolchain, you can rebuild with:
