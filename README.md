@@ -31,6 +31,68 @@
 这个 skill 把更稳妥的流程固定下来：
 先用官网锁定边界和名单，再用更新、更强的一手公开证据去重建每位老师当前真正活跃的研究主题。
 
+## Quick Start
+
+最快的使用方式只有三步：
+
+1. 安装这个 skill。
+2. 给出学校、院系/专业，以及官方教师名单入口。
+3. 明确要求“不要只看官网，优先看近 3-5 年公开证据，并输出 Markdown 报告”。
+
+如果你只是想立刻试一次，可以直接复制下面这段：
+
+```text
+帮我调研某个学校某个专业全部老师最近的研究方向。
+请以官网教师名单做底表，但不要只看官网简介，优先参考近 3-5 年论文、Google Scholar、ORCID、学院新闻、项目和公开讲座。
+最后输出成中文 Markdown 报告。
+```
+
+## Installation
+
+### 安装到 Codex
+
+把整个 skill 目录复制到：
+
+```text
+C:\Users\ASUS\.codex\skills\department-advisor-research-radar
+```
+
+### 安装到 Claude Code
+
+把整个 skill 目录复制到：
+
+```text
+C:\Users\ASUS\.claude\skills\department-advisor-research-radar
+```
+
+### 用打包文件安装/分发
+
+如果你更喜欢分发打包文件，可以直接使用：
+
+```text
+dist/department-advisor-research-radar.skill
+```
+
+## Example Prompt Gallery
+
+下面这些请求都很适合触发这个 skill：
+
+```text
+帮我调研北京大学心理学系全部老师最近 3-5 年的研究方向，输出中文 Markdown。
+```
+
+```text
+我想申请某个项目，先帮我把这个院系所有导师的当前研究主题摸一遍，不要只看官网。
+```
+
+```text
+请把这个专业所有老师按当前研究方向做画像，优先看近年论文、Google Scholar、ORCID 和学院新闻。
+```
+
+```text
+帮我做一个院系 research landscape，看看这些老师现在分别集中在哪些研究主题上。
+```
+
 ## 仓库结构
 
 ```text
@@ -148,3 +210,7 @@ python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\package_skill.py
 
 - 这个 skill 做的是“公开证据下的当前研究方向重建”，不是招生承诺判断。
 - 是否当年招生、是否收推免/直博/RA，仍应以最新招生通知或老师回复为准。
+
+## License
+
+本仓库当前采用 [MIT License](./LICENSE)。

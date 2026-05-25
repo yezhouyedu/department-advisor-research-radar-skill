@@ -31,6 +31,69 @@ Many department websites are not useless, just limited:
 This skill formalizes a better workflow:
 use the official site to lock scope and identity, then reconstruct each faculty member's current active topics from newer and stronger public evidence.
 
+## Quick Start
+
+The fastest way to use this skill is:
+
+1. Install the skill.
+2. Provide the school, department/program, and an official faculty-list entry page.
+3. Explicitly ask for recent multi-source evidence and a Markdown report.
+
+If you want to test it immediately, you can start with:
+
+```text
+Help me investigate the latest research directions of all faculty members in a target department.
+Use the official faculty roster as the base table, but do not rely only on official bios.
+Prioritize papers from the last 3-5 years, Google Scholar, ORCID, school news, grants, and public talks.
+Return the final result as a Markdown report.
+```
+
+## Installation
+
+### Install for Codex
+
+Copy the skill directory to:
+
+```text
+C:\Users\ASUS\.codex\skills\department-advisor-research-radar
+```
+
+### Install for Claude Code
+
+Copy the skill directory to:
+
+```text
+C:\Users\ASUS\.claude\skills\department-advisor-research-radar
+```
+
+### Install or distribute via packaged artifact
+
+You can also use the packaged artifact directly:
+
+```text
+dist/department-advisor-research-radar.skill
+```
+
+## Example Prompt Gallery
+
+These requests are strong matches for this skill:
+
+```text
+Help me map the latest research directions of all faculty members in the Department of Psychology at Peking University. Output the result in Markdown.
+```
+
+```text
+I am preparing graduate applications. Please investigate the current research themes of all advisors in this department, and do not rely only on the official website.
+```
+
+```text
+Profile all faculty members in this program based on recent papers, Google Scholar, ORCID, and school news.
+```
+
+```text
+Build a department-level research landscape report showing what each faculty member appears to be actively studying now.
+```
+
 ## Repository Structure
 
 ```text
@@ -149,3 +212,7 @@ python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\package_skill.py
 
 - This skill reconstructs current research directions from public evidence; it does not guarantee recruitment status.
 - For admissions-related decisions, always verify current recruiting status through official notices or direct faculty contact.
+
+## License
+
+This repository is currently released under the [MIT License](./LICENSE).
