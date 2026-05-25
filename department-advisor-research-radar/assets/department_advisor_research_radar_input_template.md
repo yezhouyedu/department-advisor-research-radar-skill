@@ -1,4 +1,4 @@
-# Faculty Recon Input Template
+# Department Advisor Research Radar Input Template
 
 Copy and fill this when launching the skill.
 

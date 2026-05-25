@@ -1,8 +1,8 @@
-# Faculty Research Recon Skill
+# 院系导师研究方向雷达
 
 [English Version](./README.en.md)
 
-`faculty-research-recon` 是一个可复用的 Codex/Claude 风格 skill，用来调研某个大学、院系、专业或学科方向下全部教师的最新公开研究方向。
+`department-advisor-research-radar` 是一个可复用的 Codex/Claude 风格 skill，用来调研某个大学、院系、专业或学科方向下全部教师/导师的最新公开研究方向。
 
 它特别适合这种场景：官网教师页还能拿来确认名单和身份，但内容已经偏旧，真正想知道的是“这些老师最近几年到底在做什么研究”。
 
@@ -34,35 +34,35 @@
 ## 仓库结构
 
 ```text
-faculty-research-recon/
+department-advisor-research-radar/
   SKILL.md
   assets/
   references/
 dist/
-  faculty-research-recon.skill
+  department-advisor-research-radar.skill
 ```
 
 ## 仓库内容
 
-- `faculty-research-recon/SKILL.md`
+- `department-advisor-research-radar/SKILL.md`
   核心 skill 定义、触发条件与执行工作流
 
-- `faculty-research-recon/references/source-priority.md`
+- `department-advisor-research-radar/references/source-priority.md`
   信息源优先级、冲突处理与弱证据处理规则
 
-- `faculty-research-recon/references/report-format.md`
+- `department-advisor-research-radar/references/report-format.md`
   最终 Markdown 报告格式规范
 
-- `faculty-research-recon/references/fudan-psychology-example.md`
+- `department-advisor-research-radar/references/fudan-psychology-example.md`
   复旦大学心理学系案例，用来展示这个 skill 在真实院系上的执行方式
 
-- `faculty-research-recon/assets/faculty_recon_input_template.md`
+- `department-advisor-research-radar/assets/department_advisor_research_radar_input_template.md`
   可复用输入模板
 
-- `faculty-research-recon/assets/faculty_recon_report_template.md`
+- `department-advisor-research-radar/assets/department_advisor_research_radar_report_template.md`
   可复用输出模板
 
-- `dist/faculty-research-recon.skill`
+- `dist/department-advisor-research-radar.skill`
   已打包好的 skill 文件，可直接分发或安装
 
 ## 适用场景
@@ -78,8 +78,8 @@ dist/
 
 ```powershell
 $env:PYTHONUTF8='1'
-python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\quick_validate.py .\faculty-research-recon
-python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\package_skill.py .\faculty-research-recon .\dist
+python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\quick_validate.py .\department-advisor-research-radar
+python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\package_skill.py .\department-advisor-research-radar .\dist
 ```
 
 ## 使用提醒

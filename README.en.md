@@ -1,8 +1,8 @@
-# Faculty Research Recon Skill
+# Department Advisor Research Radar
 
 [中文版](./README.md)
 
-`faculty-research-recon` is a reusable Codex/Claude-style skill for investigating the latest public research directions of all faculty members in a target university department, program, major, or discipline cluster.
+`department-advisor-research-radar` is a reusable Codex/Claude-style skill for investigating the latest public research directions of all faculty members or advisors in a target university department, program, major, or discipline cluster.
 
 It is especially useful when official faculty pages are still good enough for roster and identity verification, but too stale to answer the real question: what is each faculty member actively working on in recent years?
 
@@ -34,35 +34,35 @@ use the official site to lock scope and identity, then reconstruct each faculty 
 ## Repository Structure
 
 ```text
-faculty-research-recon/
+department-advisor-research-radar/
   SKILL.md
   assets/
   references/
 dist/
-  faculty-research-recon.skill
+  department-advisor-research-radar.skill
 ```
 
 ## Repository Contents
 
-- `faculty-research-recon/SKILL.md`
+- `department-advisor-research-radar/SKILL.md`
   Core skill definition, trigger conditions, and execution workflow
 
-- `faculty-research-recon/references/source-priority.md`
+- `department-advisor-research-radar/references/source-priority.md`
   Evidence ranking, conflict handling, and sparse-evidence rules
 
-- `faculty-research-recon/references/report-format.md`
+- `department-advisor-research-radar/references/report-format.md`
   Final Markdown report format
 
-- `faculty-research-recon/references/fudan-psychology-example.md`
+- `department-advisor-research-radar/references/fudan-psychology-example.md`
   A real example based on Fudan University psychology faculty mapping
 
-- `faculty-research-recon/assets/faculty_recon_input_template.md`
+- `department-advisor-research-radar/assets/department_advisor_research_radar_input_template.md`
   Reusable input template
 
-- `faculty-research-recon/assets/faculty_recon_report_template.md`
+- `department-advisor-research-radar/assets/department_advisor_research_radar_report_template.md`
   Reusable output template
 
-- `dist/faculty-research-recon.skill`
+- `dist/department-advisor-research-radar.skill`
   Packaged skill artifact ready for sharing or installation
 
 ## Use Cases
@@ -78,8 +78,8 @@ If you have the local skill-creator toolchain, you can rebuild with:
 
 ```powershell
 $env:PYTHONUTF8='1'
-python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\quick_validate.py .\faculty-research-recon
-python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\package_skill.py .\faculty-research-recon .\dist
+python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\quick_validate.py .\department-advisor-research-radar
+python C:\Users\ASUS\.agents\skills\skill-creator-0.1.0\scripts\package_skill.py .\department-advisor-research-radar .\dist
 ```
 
 ## Notes

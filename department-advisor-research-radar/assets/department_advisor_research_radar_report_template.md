@@ -1,4 +1,4 @@
-# <School> <Department/Program> Faculty Research Recon Report
+# <School> <Department/Program> Department Advisor Research Radar Report
 
 Generated: YYYY-MM-DD
 Target: <school + department/program>

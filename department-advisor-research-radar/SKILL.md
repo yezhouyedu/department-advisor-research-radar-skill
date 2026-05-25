@@ -1,9 +1,9 @@
 ---
-name: faculty-research-recon
-description: Use when the user wants a reproducible, evidence-based investigation of all faculty members in a specific university, department, major, lab cluster, or discipline, focused on each person's latest research directions rather than stale profile text. Triggers on requests to survey teachers, map faculty research interests, verify current topics across multiple public sources, or produce a structured Markdown report for school application targeting, advisor selection, or academic landscape review.
+name: department-advisor-research-radar
+description: 当用户想调研某个学校、院系、专业、实验室集群或学科方向下全部老师/导师/教师的最新研究方向时使用，尤其适用于“不要只看官网”“看近3-5年真实研究主题”“整理成Markdown报告”“为申请/套磁/导师筛选做院系画像”等请求。 Use when the user wants a reproducible, evidence-based investigation of all faculty members in a specific university, department, major, lab cluster, or discipline, focused on each person's latest research directions rather than stale profile text. Triggers on requests to survey all teachers/advisors in a target unit, verify current research themes across multiple public sources, and produce a structured Markdown report for graduate application targeting, advisor selection, or academic landscape review.
 ---
 
-# Faculty Research Recon
+# Department Advisor Research Radar
 
 ## Overview
 
@@ -156,8 +156,8 @@ That means:
 - surface uncertainty clearly
 
 Use the reusable templates in:
-- [assets/faculty_recon_input_template.md](assets/faculty_recon_input_template.md)
-- [assets/faculty_recon_report_template.md](assets/faculty_recon_report_template.md)
+- [assets/department_advisor_research_radar_input_template.md](assets/department_advisor_research_radar_input_template.md)
+- [assets/department_advisor_research_radar_report_template.md](assets/department_advisor_research_radar_report_template.md)
 - [references/fudan-psychology-example.md](references/fudan-psychology-example.md)
 
 ## Common Failure Modes
